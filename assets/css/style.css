@@ -2447,7 +2447,7 @@ ul.icon-list-2 li::before {
 } */
 
 .features-row div[class*=col]:nth-child(-n+2) .features-single {
-    padding: 3rem 6rem 9.2rem 6rem
+    padding: 4rem 6rem 4rem 6rem
 }
 
 .features-row div[class*=col]:nth-last-child(-n+2) .features-single {
@@ -2479,13 +2479,13 @@ ul.icon-list-2 li::before {
 
     .features-row div[class*=col]:nth-child(-n+2) .features-single,
     .features-row div[class*=col]:nth-last-child(-n+2) .features-single {
-        padding: 5rem 7rem 5rem 7rem
+        padding: 5rem 6rem 5rem 6rem
     }
 }
 
 .features-single {
     text-align: center;
-    padding: 4rem 7rem 4rem 7rem
+    padding: 4rem 6rem 4rem 6rem
 }
 
 .features-single .icon {
