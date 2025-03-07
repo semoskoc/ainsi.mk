@@ -1734,6 +1734,14 @@ ul.icon-list-2 li::before {
     border-bottom-left-radius: 4rem */
 }
 
+.border-r{
+    border-right: .1rem solid #e3e3ed;
+}
+
+.border-t{
+    border-top: .1rem solid #e3e3ed;
+}
+
 .button-inner {
     display: flex;
     align-items: center;
@@ -2446,9 +2454,9 @@ ul.icon-list-2 li::before {
     padding: 4rem 7rem 4rem 7rem
 }
 
-.features-row div[class*=col]:nth-child(n+3) {
+/* .features-row div[class*=col]:nth-child(n+3) {
     border-top: .1rem solid #e3e3ed
-}
+} */
 
 
 
