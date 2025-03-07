@@ -1500,6 +1500,10 @@ ul.icon-list-2 li::before {
     border-bottom-left-radius: 4rem */
 }
 
+.main-color{
+    color: var(--gradient-purple);
+}
+
 .download-button-group .download-button:not(:last-child) {
     margin-right: 1.8rem
 }
