@@ -40,7 +40,7 @@
     --orange-2: #ffa667;
     --orange-drop-shadow: #ff9a47;
     --orange-drop-shadow-rgba-2: rgba(255, 154, 71, .2);
-    --orange-drop-shadow-1: #ff5b73;
+    --orange-drop-shadow-1: #ff9a47;
     --orange-drop-shadow-1-rgba-2: rgba(255, 91, 115, .2);
     --gradient-orange-1: #ff93f2;
     --gradient-orange-1-rgba: rgba(255, 147, 242, 1);
@@ -2422,8 +2422,8 @@ ul.icon-list-2 li::before {
 }
 
 .features .section-heading {
-    margin-bottom: 9rem;
-    margin-top: 9rem;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
 }
 
 @media(max-width: 991px) {
@@ -4794,7 +4794,7 @@ body {
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 90%
+    height: 850px
 }
 
 .background-pattern-img {
