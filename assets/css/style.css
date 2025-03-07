@@ -4845,6 +4845,167 @@ body {
     }
 }
 
+.portfolio #portfolio-flters li,
+.job-positions #job-positions-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active,
+.job-positions #job-positions-filters li:hover,
+.job-positions #job-positions-filters li.filter-active {
+  color: #fff;
+  background: #0774bb;
+}
+
+.apply-btn {
+    background: #0774bb;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+    border-radius: 4px;
+  }
+
+  .apply-btn:hover {
+    background: #1f1f1f;
+    color: #fff;
+  }
+  .portfolio .portfolio-wrap,
+  .job-positions .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .portfolio .portfolio-wrap {
+    background: rgba(17, 17, 17, 0.6);
+  }
+  
+  .portfolio .portfolio-wrap::before
+  /*.job-positions .portfolio-wrap::before*/ {
+    content: "";
+    background: rgba(17, 17, 17, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .portfolio .portfolio-wrap img,
+  .job-positions .portfolio-wrap img {
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  
+  .job-positions .portfolio-wrap .portfolio-info {
+    margin-top: 1rem;
+  }
+  
+  .job-positions .portfolio-wrap .portfolio-info {
+    background: white;
+    min-height: 17rem;
+    padding: 10px 20px;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .job-positions .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    min-height: 3rem;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .job-positions .portfolio-wrap .portfolio-info p {
+    color: black;
+    font-size: 15px;
+  }
+  
+  .job-positions-container .job-position-item {
+    margin-top: 1rem;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links,
+  .job-positions .portfolio-wrap .portfolio-links {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a,
+  .job-positions .portfolio-wrap .portfolio-links a {
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 5px 0 0;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a:hover,
+  .job-positions .portfolio-wrap .portfolio-links a:hover {
+    color: #fff;
+  }
+  
+  .portfolio .portfolio-wrap:hover::before,
+  .job-positions .portfolio-wrap:hover::before {
+    opacity: 1;
+  }
+  
+  .portfolio .portfolio-wrap:hover img,
+  .job-positions .portfolio-wrap:hover img {
+    transform: scale(1.2);
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info,
+  .job-positions .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+  }
+  
 .background-pattern-1 .background-pattern-gradient {
     filter: drop-shadow(0px 50px 50px var(--gradient-purple-1-rgba-2));
     -webkit-filter: drop-shadow(0px 50px 50px var(--gradient-purple-1-rgba-2));
