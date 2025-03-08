@@ -163,13 +163,13 @@ p.medium{
 }
 
 .c-grey {
-    color: #6a6f77;
-    fill: #6a6f77
+    color: #3d3d3d;
+    fill: #3d3d3d
 }
 
 .c-grey-1 {
     color: #666b6d;
-    fill: #6a6f77
+    fill: #3d3d3d
 }
 
 .c-red {
@@ -339,7 +339,7 @@ p.medium{
 }
 
 .link-underline-1>span::before {
-    background-color: #6a6f77
+    background-color: #3d3d3d
 }
 
 .slider-navigation {
@@ -704,7 +704,7 @@ ul.icon-list-2 li::before {
 
 .navigation-menu .parent>li .child li a span {
     font-size: 1.5rem;
-    color: #6a6f77;
+    color: #3d3d3d;
     transition: all .25s ease-out 0s
 }
 
@@ -778,7 +778,7 @@ ul.icon-list-2 li::before {
     border: none;
     outline-color: rgba(0, 0, 0, 0);
     font-size: 1.6rem;
-    color: #6a6f77;
+    color: #3d3d3d;
     padding: 0 5rem 0 2.8rem
 }
 
@@ -1121,7 +1121,7 @@ ul.icon-list-2 li::before {
 .top-menu .tagline p {
     font-size: 1.3rem;
     font-weight: 500;
-    color: #6a6f77;
+    color: #3d3d3d;
     margin: 0
 }
 
@@ -1145,7 +1145,7 @@ ul.icon-list-2 li::before {
 }
 
 .top-menu .menu ul li.phone:hover {
-    color: #6a6f77
+    color: #3d3d3d
 }
 
 @media(max-width: 730px) {
@@ -1524,7 +1524,7 @@ ul.icon-list-2 li::before {
 .download-button-inner {
     display: flex;
     align-items: center;
-    padding: 1.8rem 3rem 1.6rem 3.4rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     background-color: rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
@@ -1570,7 +1570,7 @@ ul.icon-list-2 li::before {
 }
 
 .download-button-content h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin: 0;
     transition: all .25s ease-out .1s
@@ -1658,7 +1658,7 @@ ul.icon-list-2 li::before {
 }
 
 .download-button-1:hover .download-button-content h5 {
-    color: #6a6f77
+    color: #3d3d3d
 }
 
 .download-button-1:not(:last-child) {
@@ -1724,7 +1724,7 @@ ul.icon-list-2 li::before {
 }
 
 .download-button-2:hover .download-button-content h5 {
-    color: #6a6f77
+    color: #3d3d3d
 }
 
 .button {
@@ -2803,7 +2803,7 @@ ul.icon-list-2 li::before {
 .pricing-single .price {
     font-size: 3rem;
     font-weight: 500;
-    color: #6a6f77;
+    color: #3d3d3d;
     text-align: center;
     margin: 2.2rem 0 6rem 0;
     overflow: hidden;
@@ -2860,7 +2860,7 @@ ul.icon-list-2 li::before {
 .pricing-single ul li {
     font-size: 1.6rem;
     font-weight: 500;
-    color: #6a6f77
+    color: #3d3d3d
 }
 
 .pricing-single ul li:nth-child(n+2) {
@@ -2894,7 +2894,7 @@ ul.icon-list-2 li::before {
 .pricing-single h6 {
     font-size: 1.2rem;
     text-align: center;
-    color: #6a6f77
+    color: #3d3d3d
 }
 
 .pricing-single.basic {
@@ -3055,7 +3055,7 @@ ul.icon-list-2 li::before {
     font-size: 2.4rem;
     font-weight: 500;
     line-height: 4rem;
-    color: #6a6f77
+    color: #3d3d3d
 }
 
 .testimonial-slide .content h5 {
@@ -3165,14 +3165,6 @@ ul.icon-list-2 li::before {
     }
 }
 
-.faq {
-    padding: 1rem 2rem;
-    background-color: #fff;
-    border-top-left-radius: 1.7rem;
-    border-top-right-radius: 1.7rem;
-    border-bottom-right-radius: 1.7rem;
-    border-bottom-left-radius: 1.7rem
-}
 
 @media(max-width: 991px) {
     .faq {
@@ -3184,10 +3176,6 @@ ul.icon-list-2 li::before {
     .faq {
         padding: 3rem 3rem
     }
-}
-
-.faq-wrapper {
-    margin: 0 2rem
 }
 
 @media(max-width: 991px) {
@@ -3245,24 +3233,24 @@ ul.icon-list-2 li::before {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 3rem;
-    color: #6a6f77
+    color: #3d3d3d
 }
 
-.faq-wrapper {
-    padding: .4rem;
-    background: var(--gradient-red-rgb);
-    background: linear-gradient(0deg, var(--gradient-purple-rgba) 20%, var(--gradient-red-rgba) 50%, var(--gradient-orange-rgba) 80%);
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    filter: drop-shadow(0px 35px 25px var(--purple-drop-shadow-rgba-1));
-    -webkit-filter: drop-shadow(0px 35px 25px var(--purple-drop-shadow-rgba-1));
-    -moz-filter: drop-shadow(0px 35px 25px var(--purple-drop-shadow-rgba-1))
+.reserve-button{
+    display: inline-block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: left;
+    border-radius: 4px;
 }
 
 .faq-section-1 .faq-section-wrapper {
     padding-bottom: 5rem
+}
+
+.card-body{
+    padding: 2rem;
 }
 
 @media(max-width: 991px) {
@@ -3897,7 +3885,7 @@ ul.icon-list-2 li::before {
 .tab-nav .nav-link i {
     font-size: 5rem;
     margin-right: 1.5rem;
-    color: #6a6f77;
+    color: #3d3d3d;
     transition: all .25s ease-out 0s
 }
 
@@ -3910,7 +3898,7 @@ ul.icon-list-2 li::before {
     font-size: 2rem;
     /* line-height: 3.6rem; */
     font-weight: 600;
-    color: #6a6f77;
+    color: #3d3d3d;
     transition: all .25s ease-out 0s;
     font-size: 16px;
     line-height: 20px;
@@ -4267,7 +4255,7 @@ ul.icon-list-2 li::before {
 }
 
 .team-single p {
-    color: #6a6f77
+    color: #3d3d3d
 }
 
 .team-single .social {
