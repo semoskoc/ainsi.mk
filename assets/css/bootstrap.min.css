@@ -4853,8 +4853,9 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem
+    /* border: 2px solid var(--bs-orange); */
+    border-radius: .25rem;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .card>hr {
@@ -4895,7 +4896,8 @@ fieldset:disabled .btn {
 
 .card-subtitle {
     margin-top: -.25rem;
-    margin-bottom: 0
+    margin-bottom: 0;
+    color: #ff5c39;
 }
 
 .card-text:last-child {
