@@ -4934,6 +4934,66 @@ body {
     padding: 20px;
   }
   
+  html,
+body,
+.intro {
+  padding: 80px 0;
+}
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+thead th {
+  color: #fff;
+}
+
+.table>:not(caption)>*>*{
+    padding: 1rem;
+}
+
+.card {
+  border-radius: .5rem;
+}
+ /* Контейнер за хоризонтален скрол */
+ .table-scroll {
+    overflow-x: auto;
+  }
+  /* Фиксен распоред на табелата за правилно ширинско распределување */
+  .table-scroll table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  /* Секоја колона да биде 150px широка */
+  .table-scroll th,
+  .table-scroll td {
+    margin-right: 30px;
+    font-size: 14px;
+    text-align: center;
+    align-content: center;
+    width: 200px;
+    white-space: normal; /* Дозволува да се прескокнува текстот */
+    word-wrap: break-word; /* Прескокнување на долги зборови */
+  }
+
+  th, td {
+    border-right: 1px solid #ddd; /* или изберете сакана боја и дебелина */
+  }
+
+.table-scroll {
+  border-radius: .5rem;
+}
+
+.table-scroll table thead th {
+  font-size: 1.25rem;
+}
+thead {
+  top: 0;
+  position: sticky;
+}
   
   .job-positions .portfolio-wrap .portfolio-info {
     margin-top: 1rem;
