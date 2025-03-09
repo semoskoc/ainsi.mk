@@ -511,6 +511,10 @@ p.medium{
     color: var(--purple-4)
 }
 
+.social-gradient .tiktok i {
+    color: var(--red-1)
+}
+
 ul.icon-list {
     list-style: none;
     margin-left: 3rem
@@ -838,6 +842,7 @@ ul.icon-list-2 li::before {
         height: 100vh;
         transition: all .25s ease-out 0s
     }
+
 
     .navigation-menu .close-button {
         display: none;
@@ -1229,9 +1234,11 @@ ul.icon-list-2 li::before {
 
 @media(max-width: 991px) {
     .hero .container {
-        top: 0;
+        top: 14rem;
     } 
-    
+
+
+ 
     .hero-image {
         justify-content: center;
         padding: 17.8rem 0 5rem 0
@@ -1290,7 +1297,7 @@ ul.icon-list-2 li::before {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: left;
     }
 
     .hero-content p {
@@ -1318,12 +1325,8 @@ ul.icon-list-2 li::before {
         padding-bottom: 3rem;
     }
 
-    .features {
-        margin-top: 8rem;
-    }
-
     .features-first {
-        margin-top: 10rem;
+        margin-top: -16rem;
     }
 
     .cta-section h1 {
@@ -1355,13 +1358,17 @@ ul.icon-list-2 li::before {
     }
 
     
-
-    .features-first {
-        margin-top: 10rem;
+    .border-r {
+        border-right: none!important;
     }
 
-    
-
+    .features-first {
+        margin-top: -4rem;
+    }
+    .hero-content h1 {
+        font-size: 54px;
+        text-align: center!important;
+    }
     
 }
 @media(max-width:770px) {
@@ -1404,16 +1411,32 @@ ul.icon-list-2 li::before {
 
     }
 
-    
-
     .features-first {
         margin-top: 20rem;
     }
+
+    .hero .container {
+        top: 60px;
+    }
+
 }
+
+@media (min-width: 500px) and (max-width: 530px) {
+    .features-first {
+        margin-top: 30rem!important;
+    }
+    .hero .container {
+        top: 14rem;
+    }
+}
+
 
 @media(max-width: 500px) {
     .hero{
         height: 250px;
+    }
+    .hero-content{
+        top: 0;
     }
 
     .hero-content {
@@ -1426,13 +1449,13 @@ ul.icon-list-2 li::before {
     }
 
     .hero-content h1 {
-        font-size: 36px;
+        font-size: 36px!important;
         line-height: 41px;
         text-align: center!important;
     }
 
     .background-pattern {
-        height: 80% !important;
+        height: 70%!important;
     }
 
     .page-header .background-pattern {
@@ -1442,7 +1465,17 @@ ul.icon-list-2 li::before {
     
 
     .features-first {
-        margin-top: 25rem;
+        margin-top: 34rem;
+    }
+}
+
+
+@media(max-width: 991px) {
+    .hero-1 .hero-absolute-image {
+        right: -19%
+    }
+    .background-pattern {
+        height: 65%;
     }
 }
 
@@ -1505,15 +1538,14 @@ ul.icon-list-2 li::before {
     }
 }
 
-@media(max-width: 991px) {
-    .hero-1 .hero-absolute-image {
-        right: -19%
-    }
-}
 
 @media(max-width: 767px) {
     .hero-1 .hero-absolute-image {
         right: -42%
+    }
+
+    .pad-how{
+        padding: 0rem 4rem 3rem 4rem;
     }
 }
 
@@ -1947,11 +1979,15 @@ ul.icon-list-2 li::before {
 
 .section-heading.center {
     text-align: center;
-    margin: 10rem auto
+    margin: 10rem auto;
+}
+
+.pad-how-bottom{
+    padding-bottom: 5rem;
 }
 
 .section-heading.center .sub-heading {
-    justify-content: center
+    justify-content: center;
 }
 
 @media(max-width: 991px) {
@@ -2001,15 +2037,10 @@ ul.icon-list-2 li::before {
 }
 
 .app-feature-1 .app-feature-wrapper {
-    padding: 0 0 5rem 0;
+    padding: 0 0 10rem 0;
     
 }
 
-@media(max-width: 991px) {
-    .app-feature-1 .app-feature-wrapper {
-        padding: 0
-    }
-}
 
 .app-feature-2 .app-feature-wrapper {
     padding: 0 0 5rem 0
@@ -2028,6 +2059,14 @@ ul.icon-list-2 li::before {
 @media(max-width: 991px) {
     .app-feature .section-heading {
         margin-bottom: 3rem
+    }
+
+    .hero-content h1{
+        font-size: 54px;
+    }
+
+    .hero-content{
+        padding: 5rem;
     }
 }
 
@@ -4831,7 +4870,7 @@ body {
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 850px
+    height: 100%
 }
 
 .background-pattern-img {
@@ -4970,7 +5009,7 @@ body {
   html,
 body,
 .intro {
-  padding: 80px 0;
+  padding: 0 0 80px 0;
 }
 
 table td,
