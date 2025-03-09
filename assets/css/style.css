@@ -4990,8 +4990,13 @@ thead th {
 
 .card {
   border-radius: .5rem;
-  min-height: 264px;
+  min-height: 274px;
 }
+
+.card-contact {
+    border-radius: .5rem;
+    min-height: 100px;
+  }
 
 .table-responsive {
     overflow-x: auto; /* Овозможи хоризонтален скрол */
