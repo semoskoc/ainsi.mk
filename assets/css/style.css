@@ -1234,7 +1234,7 @@ ul.icon-list-2 li::before {
 
 @media(max-width: 991px) {
     .hero .container {
-        top: 14rem;
+        top: 10rem;
     } 
 
 
@@ -1363,7 +1363,7 @@ ul.icon-list-2 li::before {
     }
 
     .features-first {
-        margin-top: -4rem;
+        margin-top: -18rem;
     }
     .hero-content h1 {
         font-size: 54px;
@@ -1412,7 +1412,7 @@ ul.icon-list-2 li::before {
     }
 
     .features-first {
-        margin-top: 20rem;
+        margin-top: 14rem;
     }
 
     .hero .container {
@@ -1421,12 +1421,30 @@ ul.icon-list-2 li::before {
 
 }
 
-@media (min-width: 500px) and (max-width: 530px) {
+@media (min-width: 321px) and (max-width: 424px) {
     .features-first {
-        margin-top: 30rem!important;
+        margin-top: 46rem!important;
     }
+}
+
+@media (min-width: 500px) and (max-width: 530px) {
     .hero .container {
         top: 14rem;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+    .hero .container {
+        top: 10rem;
+    }
+    .features-first {
+        margin-top: -30rem;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 574px) {
+    .features-first {
+        margin-top: -22rem!important;
     }
 }
 
@@ -1455,12 +1473,9 @@ ul.icon-list-2 li::before {
     }
 
     .background-pattern {
-        height: 70%!important;
+        height: 80%!important;
     }
 
-    .page-header .background-pattern {
-        height: 90% !important;
-    }
 
     
 
@@ -1475,7 +1490,7 @@ ul.icon-list-2 li::before {
         right: -19%
     }
     .background-pattern {
-        height: 65%;
+        height: 100%;
     }
 }
 
