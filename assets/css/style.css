@@ -94,6 +94,14 @@ h1 {
  
 }
 
+.features-first h1 
+{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+ 
+}
+
 @media(max-width: 991px) {
     h1 {
         font-size: 5rem;
@@ -1311,6 +1319,10 @@ ul.icon-list-2 li::before {
     }
 
     .features {
+        margin-top: 8rem;
+    }
+
+    .features-first {
         margin-top: 10rem;
     }
 
@@ -1342,7 +1354,9 @@ ul.icon-list-2 li::before {
     align-items: center;
     }
 
-    .features {
+    
+
+    .features-first {
         margin-top: 10rem;
     }
 
@@ -1374,11 +1388,15 @@ ul.icon-list-2 li::before {
         padding: 0 5rem;
 
     }
+
+    .mobile-padding-text{
+        padding: 0 2rem;
+    }
 }
 
 @media(max-width: 530px) {
     .hero{
-        height: 765px;
+        height: 500px;
     }
 
     .hero-content {
@@ -1386,14 +1404,16 @@ ul.icon-list-2 li::before {
 
     }
 
-    .features {
+    
+
+    .features-first {
         margin-top: 20rem;
     }
 }
 
 @media(max-width: 500px) {
     .hero{
-        height: 725px;
+        height: 250px;
     }
 
     .hero-content {
@@ -1419,18 +1439,20 @@ ul.icon-list-2 li::before {
         height: 90% !important;
     }
 
-    .features {
+    
+
+    .features-first {
         margin-top: 25rem;
     }
 }
 
 @media(max-width: 425px) {
     .hero{
-        height: 750px;
+        height: 150px;
     }
 
     .hero-content {
-        padding: 0 3rem;
+        padding: 2rem 3rem;
 
     }
 
@@ -1440,7 +1462,9 @@ ul.icon-list-2 li::before {
         line-height: 35px;
     }
 
-    .features {
+    
+
+    .features-first {
         margin-top: 30rem;
     }
 
@@ -1450,7 +1474,9 @@ ul.icon-list-2 li::before {
 }
 
 @media(max-width: 375px) {
-    .features {
+    
+
+    .features-first {
         margin-top: 35rem;
     }
 
@@ -1458,7 +1484,9 @@ ul.icon-list-2 li::before {
 }
 
 @media(max-width: 320px) {
-    .features {
+    
+
+    .features-first {
         margin-top: 45rem;
     }
 }
@@ -2443,8 +2471,17 @@ ul.icon-list-2 li::before {
     margin-top: 4rem;
 }
 
+.features-first .section-heading {
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
 @media(max-width: 991px) {
     .features .section-heading {
+        margin-bottom: 0
+    }
+
+    .features-first .section-heading {
         margin-bottom: 0
     }
 }
@@ -2452,6 +2489,7 @@ ul.icon-list-2 li::before {
 .features-row {
     padding-bottom: 4.9rem
 }
+
 
 @media(max-width: 991px) {
     .features-row {
@@ -3175,17 +3213,7 @@ ul.icon-list-2 li::before {
 }
 
 
-@media(max-width: 991px) {
-    .faq {
-        padding: 3rem 5rem
-    }
-}
 
-@media(max-width: 375px) {
-    .faq {
-        padding: 3rem 3rem
-    }
-}
 
 @media(max-width: 991px) {
     .faq-wrapper {
@@ -3252,6 +3280,7 @@ ul.icon-list-2 li::before {
     width: max-content;
     text-align: left;
     border-radius: 4px;
+    margin-top: 4px;
 }
 
 .faq-section-1 .faq-section-wrapper {
@@ -5323,7 +5352,7 @@ thead {
 .first-image {
     width: 100%;
     height: 80vh;
-    background-image: url('../../assets/images/AI Skills Fest Style Guide - Partner-01.png');
+    background-image: url('../../assets/images/3d-rendering-abstract-cube.jpg');
     background-size: cover; 
     background-position: right center; 
     background-repeat: no-repeat; 
@@ -5333,7 +5362,7 @@ thead {
 .second-image{
     width: 100%;
     height: 40vh;
-    background-image: url('../../assets/images/AI Skills Fest Style Guide - Partner-01.png');
+    background-image: url('../../assets/images/crystal-ball-high-angle.jpg');
     background-size: cover; 
     background-position: right center; 
     background-repeat: no-repeat; 
