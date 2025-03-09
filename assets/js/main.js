@@ -1286,3 +1286,50 @@ window.addEventListener('resize', () => {
     new PureCounter();
   
   })()
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const tableContainer = document.querySelector(".table-responsive");
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    // Овозможи drag to scroll
+    tableContainer.addEventListener("mousedown", (e) => {
+        isDown = true;
+        startX = e.pageX - tableContainer.offsetLeft;
+        scrollLeft = tableContainer.scrollLeft;
+        tableContainer.classList.add("active");
+    });
+
+    tableContainer.addEventListener("mouseleave", () => {
+        isDown = false;
+        tableContainer.classList.remove("active");
+    });
+
+    tableContainer.addEventListener("mouseup", () => {
+        isDown = false;
+        tableContainer.classList.remove("active");
+    });
+
+    tableContainer.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - tableContainer.offsetLeft;
+        const walk = (x - startX) * 3; // Брзина на скрол
+        tableContainer.scrollLeft = scrollLeft - walk;
+    });
+
+    // Поддршка за маус тркалце
+    tableContainer.addEventListener("wheel", (e) => {
+        if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) return; // Превени вертикално скролирање
+        e.preventDefault();
+        tableContainer.scrollLeft += e.deltaY * 2; // Брзина на скрол
+    });
+});
+
+
+  
+
+  
+  

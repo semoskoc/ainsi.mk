@@ -59,6 +59,10 @@ a {
     text-decoration: none
 }
 
+a:hover {
+    color: #ff5c39;
+}
+
 ul {
     padding-left: 2rem;
 }
@@ -1217,8 +1221,8 @@ ul.icon-list-2 li::before {
 
 @media(max-width: 991px) {
     .hero .container {
-        top: 250px;
-    }
+        top: 0;
+    } 
     
     .hero-image {
         justify-content: center;
@@ -1368,7 +1372,7 @@ ul.icon-list-2 li::before {
 
     .hero-content {
         padding: 0 5rem;
-        margin-top: -5rem
+
     }
 }
 
@@ -1379,7 +1383,7 @@ ul.icon-list-2 li::before {
 
     .hero-content {
         /* padding: 0 0 10rem 10rem; */
-        margin-top: -5rem
+
     }
 
     .features {
@@ -1394,7 +1398,7 @@ ul.icon-list-2 li::before {
 
     .hero-content {
         /* padding: 0 0 10rem 10rem; */
-        margin-top: -5rem
+
     }
 
     .hero-content p {
@@ -1402,8 +1406,9 @@ ul.icon-list-2 li::before {
     }
 
     .hero-content h1 {
-        font-size: 45px;
+        font-size: 36px;
         line-height: 41px;
+        text-align: center!important;
     }
 
     .background-pattern {
@@ -1426,7 +1431,7 @@ ul.icon-list-2 li::before {
 
     .hero-content {
         padding: 0 3rem;
-        margin-top: -5rem
+
     }
 
     .hero-content .c-white-p {
@@ -3255,6 +3260,9 @@ ul.icon-list-2 li::before {
 
 .card-body{
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media(max-width: 991px) {
@@ -4953,17 +4961,34 @@ thead th {
 
 .card {
   border-radius: .5rem;
+  min-height: 264px;
 }
- /* Контейнер за хоризонтален скрол */
- .table-scroll {
-    overflow-x: auto;
-  }
-  /* Фиксен распоред на табелата за правилно ширинско распределување */
+
+.table-responsive {
+    overflow-x: auto; /* Овозможи хоризонтален скрол */
+    overflow-y: hidden; /* Не дозволува вертикално скролирање */
+    white-space: nowrap; /* Содржината не ќе се преклопува */
+    cursor: grab; /* Прикажи курсорот за влечење */
+    user-select: none; /* Онеспособи селектирање текст */
+}
+
+.table-responsive:active {
+    cursor: grabbing; /* Курсор кога се влече */
+}
+
+
+.table-responsive:active {
+    cursor: grabbing; /* Курсор кога се влече */
+}
+
+.table-fixed {
+    width: 1500px; /* Доволно голема за да има скрол */
+}
   .table-scroll table {
     table-layout: fixed;
     width: 100%;
   }
-  /* Секоја колона да биде 150px широка */
+ 
   .table-scroll th,
   .table-scroll td {
     margin-right: 30px;
@@ -4971,12 +4996,12 @@ thead th {
     text-align: center;
     align-content: center;
     width: 200px;
-    white-space: normal; /* Дозволува да се прескокнува текстот */
-    word-wrap: break-word; /* Прескокнување на долги зборови */
+    white-space: normal; 
+    word-wrap: break-word; 
   }
 
   th, td {
-    border-right: 1px solid #ddd; /* или изберете сакана боја и дебелина */
+    border-right: 1px solid #ddd; 
   }
 
 .table-scroll {
