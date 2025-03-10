@@ -5428,6 +5428,14 @@ thead {
     border-radius: 10px;
 }
 
+.table-scroll {
+    overflow-x: auto; 
+    overflow-y: hidden;
+    white-space: nowrap; 
+    max-width: 100%; 
+}
+
+
 
 
 /* .fixed-column {
