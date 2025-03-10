@@ -1264,7 +1264,7 @@ ul.icon-list-2 li::before {
 .hero-content {
     position: relative;
     z-index: 2;
-    /* padding: 15rem 0; */
+    padding: 16rem 0 8rem 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1298,6 +1298,7 @@ ul.icon-list-2 li::before {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: left;
+
     }
 
     .hero-content p {
@@ -1348,16 +1349,12 @@ ul.icon-list-2 li::before {
     }
 }
 @media(max-width: 768px) {
+
     .hero-content{
-        /* padding: 0 0 10rem 12rem; */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+        display: flex;
+        align-items: center;
     }
 
-    
     .border-r {
         border-right: none!important;
     }
@@ -1391,10 +1388,6 @@ ul.icon-list-2 li::before {
         height: 765px;
     }
 
-    .hero-content {
-        padding: 0 5rem;
-
-    }
 
     .mobile-padding-text{
         padding: 0 2rem;
@@ -1406,10 +1399,6 @@ ul.icon-list-2 li::before {
         height: 500px;
     }
 
-    .hero-content {
-        /* padding: 0 0 10rem 10rem; */
-
-    }
 
     .features-first {
         margin-top: 14rem;
@@ -1560,7 +1549,7 @@ ul.icon-list-2 li::before {
     }
 
     .pad-how{
-        padding: 0rem 4rem 3rem 4rem;
+        padding: 0rem 0rem 3rem 0rem;
     }
 }
 
@@ -1994,7 +1983,7 @@ ul.icon-list-2 li::before {
 
 .section-heading.center {
     text-align: center;
-    margin: 10rem auto;
+    margin: 0 auto;
 }
 
 .pad-how-bottom{
@@ -2049,10 +2038,16 @@ ul.icon-list-2 li::before {
     .section-heading.width-55 {
         width: 100%
     }
+
+    .features .section-heading{
+    margin-top: 0!important;
 }
 
+}
+
+
 .app-feature-1 .app-feature-wrapper {
-    padding: 0 0 10rem 0;
+    padding: 8rem 0 4rem 0;
     
 }
 
@@ -2081,7 +2076,7 @@ ul.icon-list-2 li::before {
     }
 
     .hero-content{
-        padding: 5rem;
+        padding: 15rem 0 0rem 0;
     }
 }
 
@@ -2521,7 +2516,6 @@ ul.icon-list-2 li::before {
 }
 
 .features .section-heading {
-    margin-bottom: 3rem;
     margin-top: 4rem;
 }
 
@@ -2588,7 +2582,7 @@ ul.icon-list-2 li::before {
 
     .features-row div[class*=col]:nth-child(-n+2) .features-single,
     .features-row div[class*=col]:nth-last-child(-n+2) .features-single {
-        padding: 5rem 6rem 5rem 6rem
+        padding: 0rem 2rem 0rem 2rem
     }
 }
 
@@ -2622,7 +2616,11 @@ ul.icon-list-2 li::before {
 
 @media(max-width: 767px) {
     .features-single {
-        padding: 5rem 7rem 5rem 7rem
+        padding: 0rem 2rem 0rem 2rem
+    }
+
+    .pad-how-bottom{
+        padding: 0!important;
     }
 }
 
@@ -4887,17 +4885,57 @@ body {
     width: 100%;
     height: 100%
 }
+.hero-section {
+    position: relative;
+    background-image: url(assets/images/patterns/pattern.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
-.background-pattern-img {
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* Или друга боја ако треба */
+    z-index: 1000; /* Осигурај се дека е над другите елементи */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лесна сенка за видливост */
+}
+
+
+.hero-section::before {
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    opacity: .15;
+    background: linear-gradient(45deg, rgba(255, 227, 153, 1) 20%, rgba(255, 92, 57, 1) 80%);
+    opacity: 0.9; /* Можеш да ја менуваш провидноста */
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ова ја поставува содржината над градиентот */
+}
+
+
+
+.background-pattern-img {
+
+    width: 100%;
+    opacity: 1;
     z-index: 2;
     mix-blend-mode: color-burn;
     background-position: 0 center;
     transform: translateZ(0)
 }
+
+.hero-section{
+    background-image: url(assets/images/patterns/pattern-01.jpg);
+}
+
 
 .background-pattern-gradient {
     position: absolute;
