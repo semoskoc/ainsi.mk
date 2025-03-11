@@ -896,24 +896,24 @@ var scrollbar = OverlayScrollbars(document.querySelector('body'), {
             if (window.innerHeight > 991 && scroll_position > 0)  {
                 navigation.classList.add('scrolled');
                 logoElements.forEach(logo => {
-                    logo.src = 'assets/images/semos-logo-mk-dark.png'; // Replace with the path to the scrolled logo image
+                    logo.src = 'assets/images/logo.png'; // Replace with the path to the scrolled logo image
                 bars.forEach(bar => {
-                    bar.style.backgroundColor = '#123769'; 
+                    bar.style.backgroundColor = '#0f4efe'; 
                 });
                 });
             } else if (window.innerHeight < 991 && scroll_position > 0)  {
                 navigation.classList.add('scrolled');
                 logoElements.forEach(logo => {
-                    logo.src = 'assets/images/semos-logo-mk-dark.png'; // Replace with the path to the scrolled logo image
+                    logo.src = 'assets/images/logo-blue.png'; // Replace with the path to the scrolled logo image
                 bars.forEach(bar => {
-                    bar.style.backgroundColor = '#123769'; 
+                    bar.style.backgroundColor = '#0f4efe'; 
                 });
                 });
 
             } else {
                 navigation.classList.remove('scrolled');
                 logoElements.forEach(logo => {
-                    logo.src = 'assets/images/semos-logo-mk.png'; // Replace with the path to the default logo image
+                    logo.src = 'assets/images/logo.png'; // Replace with the path to the default logo image
                 bars.forEach(bar => {
                     bar.style.backgroundColor = 'white'; 
                 });

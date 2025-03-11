@@ -666,7 +666,7 @@ ul.icon-list-2 li::before {
 .navigation.scrolled .navigation-menu .parent>li>a>span {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #123769;
+    color: #0f4efe;
 }
 
 .navigation-menu .parent>li+li {
@@ -729,7 +729,7 @@ ul.icon-list-2 li::before {
 }
 
 .navigation-menu .parent>li .child li a span::before {
-    background-color: #123769
+    background-color: #0f4efe
 }
 
 .navigation-menu .parent>li .child li a:hover {
@@ -737,7 +737,7 @@ ul.icon-list-2 li::before {
 }
 
 .navigation-menu .parent>li .child li a:hover span {
-    color: #123769
+    color: #0f4efe
 }
 
 .navigation-menu .parent>li:hover .child {
@@ -959,7 +959,7 @@ ul.icon-list-2 li::before {
 
     .navigation-menu .parent li .child li a span {
         display: inline-block;
-        color: #123769;
+        color: #0f4efe;
         font-size: 16px;
         font-weight: 500;
         padding: 11.5px 10px
@@ -1042,7 +1042,7 @@ ul.icon-list-2 li::before {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #123769
+    background-color: #0f4efe
 } */
 
 @media(max-width: 991px) {
@@ -1727,7 +1727,7 @@ ul.icon-list-2 li::before {
 }
 
 .download-button-1:hover .download-button-content h3 {
-    color: #123769
+    color: #0f4efe
 }
 
 .download-button-1:hover .download-button-content h5 {
@@ -1793,7 +1793,7 @@ ul.icon-list-2 li::before {
 }
 
 .download-button-2:hover .download-button-content h3 {
-    color: #123769
+    color: #0f4efe
 }
 
 .download-button-2:hover .download-button-content h5 {
@@ -3173,7 +3173,7 @@ ul.icon-list-2 li::before {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 4rem;
-    color: #123769;
+    color: #0f4efe;
     margin-top: 3rem
 }
 
@@ -3614,7 +3614,7 @@ ul.icon-list-2 li::before {
     font-size: 2rem;
     font-weight: 700;
     line-height: 3rem;
-    color: #123769;
+    color: #0f4efe;
     margin-top: 3rem
 }
 
@@ -3734,7 +3734,7 @@ ul.icon-list-2 li::before {
 }
 
 .blog-detail-content .social ul li:hover i {
-    color: #123769
+    color: #0f4efe
 }
 
 .blog-detail-1 .blog-detail-content {
@@ -3809,7 +3809,7 @@ ul.icon-list-2 li::before {
 }
 
 .comments-single h5 {
-    color: #123769;
+    color: #0f4efe;
     font-weight: 700
 }
 
@@ -4023,7 +4023,7 @@ ul.icon-list-2 li::before {
 }
 
 .tab-nav .nav-link.active span {
-    color: #123769;
+    color: #0f4efe;
     font-size: 16px;
     line-height: 20px;
 }
@@ -4355,7 +4355,7 @@ ul.icon-list-2 li::before {
 
 .team-single h3 {
     font-size: 2.6rem;
-    color: #123769;
+    color: #0f4efe;
     margin-top: 3.7rem
 }
 
@@ -4669,7 +4669,7 @@ ul.icon-list-2 li::before {
 
 .footer-list h6 {
     font-weight: bold;
-    color: #123769;
+    color: #0f4efe;
     margin-bottom: 5rem
 }
 
@@ -4923,7 +4923,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(45deg, rgba(255, 227, 153, 1) 20%, rgba(255, 92, 57, 1) 80%);
-    opacity: 0.7; /* Можеш да ја менуваш провидноста */
+    opacity: 0.8; /* Можеш да ја менуваш провидноста */
     z-index: 0;
 }
 
