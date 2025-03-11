@@ -896,7 +896,7 @@ var scrollbar = OverlayScrollbars(document.querySelector('body'), {
             if (window.innerHeight > 991 && scroll_position > 0)  {
                 navigation.classList.add('scrolled');
                 logoElements.forEach(logo => {
-                    logo.src = 'assets/images/logo.png'; // Replace with the path to the scrolled logo image
+                    logo.src = 'assets/images/logo-ainsi-pbse-white.png'; // Replace with the path to the scrolled logo image
                 bars.forEach(bar => {
                     bar.style.backgroundColor = '#0f4efe'; 
                 });
@@ -904,7 +904,7 @@ var scrollbar = OverlayScrollbars(document.querySelector('body'), {
             } else if (window.innerHeight < 991 && scroll_position > 0)  {
                 navigation.classList.add('scrolled');
                 logoElements.forEach(logo => {
-                    logo.src = 'assets/images/logo-blue.png'; // Replace with the path to the scrolled logo image
+                    logo.src = 'assets/images/logo-ainsi-pbse-blue.png'; // Replace with the path to the scrolled logo image
                 bars.forEach(bar => {
                     bar.style.backgroundColor = '#0f4efe'; 
                 });
@@ -913,7 +913,7 @@ var scrollbar = OverlayScrollbars(document.querySelector('body'), {
             } else {
                 navigation.classList.remove('scrolled');
                 logoElements.forEach(logo => {
-                    logo.src = 'assets/images/logo.png'; // Replace with the path to the default logo image
+                    logo.src = 'assets/images/logo-ainsi-pbse-white.png'; // Replace with the path to the default logo image
                 bars.forEach(bar => {
                     bar.style.backgroundColor = 'white'; 
                 });
@@ -1332,6 +1332,33 @@ window.addEventListener('resize', () => {
 
 
   
+function startCountdown(targetDate) {
+  function updateCountdown() {
+      const now = new Date().getTime();
+      const timeLeft = targetDate - now;
 
+      if (timeLeft <= 0) {
+          document.querySelector('.countdown').innerHTML = "Countdown Ended!";
+          clearInterval(interval);
+          return;
+      }
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days.toString().padStart(2, '0');
+      document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+  }
+  
+  updateCountdown();
+  const interval = setInterval(updateCountdown, 1000);
+}
+
+const targetDate = new Date("2025-04-08T10:00:00").getTime();
+startCountdown(targetDate);
   
   

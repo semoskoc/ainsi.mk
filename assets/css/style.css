@@ -5495,6 +5495,26 @@ thead {
 }
 
 
+.countdown {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.countdown div {
+    background: var(--gradient-red-1-rgba-2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 14rem;
+}
+.label {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    display: block;
+}
+
 
 
 /* .fixed-column {
