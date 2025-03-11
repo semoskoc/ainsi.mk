@@ -1592,10 +1592,7 @@ ul.icon-list-2 li::before {
     }
 }
 
-.clicked {
-    background-color: red !important; /* Портокалова боја */
-    color: white !important;
-}
+
 
 .download-button-inner {
     display: flex;
@@ -5486,6 +5483,15 @@ thead {
     overflow-y: hidden;
     white-space: nowrap; 
     max-width: 100%; 
+}
+
+/* .clicked {
+    background-color: red !important; 
+    color: white;
+} */
+
+.download-button-google .download-button-inner.clicked-button::after {
+    background: var(--gradient-purple) !important; /* Green */
 }
 
 
