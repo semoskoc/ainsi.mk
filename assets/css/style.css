@@ -2628,6 +2628,18 @@ ul.icon-list-2 li::before {
     margin: 10rem 0
 }
 
+.red{
+    color: red;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.blue{
+    color: blue;
+    background-color: blue;
+    border-radius: 50px;
+}
+
 .video-section .container {
     position: relative;
     padding-top: 1rem
