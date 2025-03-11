@@ -2553,7 +2553,7 @@ ul.icon-list-2 li::before {
 } */
 
 .features-row div[class*=col]:nth-child(-n+2) .features-single {
-    padding: 4rem 6rem 4rem 6rem
+    padding: 0rem 6rem 0rem 6rem
 }
 
 .features-row div[class*=col]:nth-last-child(-n+2) .features-single {
@@ -2591,7 +2591,7 @@ ul.icon-list-2 li::before {
 
 .features-single {
     text-align: center;
-    padding: 4rem 6rem 4rem 6rem
+    padding: 0rem 6rem 0rem 6rem
 }
 
 .features-single .icon {
@@ -5464,7 +5464,7 @@ thead {
 .first-image {
     width: 100%;
     height: 80vh;
-    background-image: url('../../assets/images/3d-rendering-abstract-cube.jpg');
+    background-image: url('../../assets/images/vizual.png');
     background-size: cover; 
     background-position: right center; 
     background-repeat: no-repeat; 

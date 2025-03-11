@@ -925,6 +925,8 @@ var scrollbar = OverlayScrollbars(document.querySelector('body'), {
 
 
 
+
+
 window.addEventListener('load', () => {
 
     price_number_height();
