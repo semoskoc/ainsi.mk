@@ -3292,6 +3292,21 @@ ul.icon-list-2 li::before {
 .faq .accordion-item:not(:first-child) {
     margin-top: .7rem
 }
+.link-mic{
+   color: #ff5c39;
+}
+
+.faq .accordion-button1 {
+    padding: 1rem 1.5rem ;
+    border: none;
+    box-shadow: none;
+    background-color: initial;
+    font-size: 14px;
+    font-weight: bold;
+    color:#2b2d30;
+    line-height: 3rem;
+    position: relative
+}
 
 .faq .accordion-button {
     border: none;
@@ -3302,6 +3317,9 @@ ul.icon-list-2 li::before {
     color:#2b2d30;
     line-height: 3rem;
     position: relative
+}
+.faq .accordion-button1 span {
+    padding-right: 3rem
 }
 
 .faq .accordion-button span {
