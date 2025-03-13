@@ -2841,6 +2841,12 @@ ul.icon-list-2 li::before {
     -webkit-text-fill-color: rgba(0, 0, 0, 0)
 }
 
+@media(max-width: 991px) {
+    .navigation-logo a img{
+        width: 100%;
+    }
+}
+
 .icon-text-1 svg {
     width: 7.5rem
 }
