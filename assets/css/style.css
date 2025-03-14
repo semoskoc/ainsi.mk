@@ -2847,6 +2847,14 @@ ul.icon-list-2 li::before {
     }
 }
 
+.color-red{
+    color: #0072bc;
+}
+
+.color-blue{
+    color: #f41ca6;
+}
+
 .icon-text-1 svg {
     width: 7.5rem
 }
