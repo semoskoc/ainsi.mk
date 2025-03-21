@@ -880,47 +880,61 @@ custom scrollbar
 //     }
 // })
 var scrollbar = OverlayScrollbars(document.querySelector('body'), {
-    overflowBehavior : {
-        x : "hidden",
-        y : "scroll"
-    },
-    callbacks: {
-        onScroll: () => {
-            const scroll_position = scrollbar.scroll().position.y;
-            const navigation = document.querySelector('.navigation');
-            const logoElements = document.querySelectorAll('.navigation-logo img');
-            const bars = document.querySelectorAll('.navigation-bar div')
+  overflowBehavior: {
+      x: "hidden",
+      y: "scroll"
+  },
+  callbacks: {
+      onScroll: () => {
+          const scroll_position = scrollbar.scroll().position.y;
+          const navigation = document.querySelector('.navigation');
+          const logoElements1 = document.querySelectorAll('.navigation-logo img');
+          const logoElements2 = document.querySelectorAll('.navigation-logo2 img');
+          const bars = document.querySelectorAll('.navigation-bar div');
 
-            if (typeof(navigation) === 'undefined' || navigation === null) return;
+          if (!navigation) return; // Излез ако елементот не постои
 
-            if (window.innerHeight > 991 && scroll_position > 0)  {
-                navigation.classList.add('scrolled');
-                logoElements.forEach(logo => {
-                    logo.src = 'assets/images/logo-ainsi-pbse-white.png'; // Replace with the path to the scrolled logo image
-                bars.forEach(bar => {
-                    bar.style.backgroundColor = '#0f4efe'; 
-                });
-                });
-            } else if (window.innerHeight < 991 && scroll_position > 0)  {
-                navigation.classList.add('scrolled');
-                logoElements.forEach(logo => {
-                    logo.src = 'assets/images/logo-ainsi-pbse-blue.png'; // Replace with the path to the scrolled logo image
-                bars.forEach(bar => {
-                    bar.style.backgroundColor = '#0f4efe'; 
-                });
-                });
+          // Логика за промена според големината на прозорецот и скрола
+          if (scroll_position > 0) {
+              navigation.classList.add('scrolled');
+              const isLargeScreen = window.innerWidth > 991;
 
-            } else {
-                navigation.classList.remove('scrolled');
-                logoElements.forEach(logo => {
-                    logo.src = 'assets/images/logo-ainsi-pbse-white.png'; // Replace with the path to the default logo image
-                bars.forEach(bar => {
-                    bar.style.backgroundColor = 'white'; 
-                });
-                });
-            }
-        }
-    }
+              // Промени за првиот сет логоа
+              logoElements1.forEach(logo => {
+                  logo.src = isLargeScreen
+                      ? 'assets/images/logo-ainsi-pbse-blue.png'
+                      : 'assets/images/logo-ainsi-pbse-blue.png';
+              });
+
+              // Промени за вториот сет логоа
+              logoElements2.forEach(logo => {
+                  logo.src = isLargeScreen
+                      ? 'assets/images/partner-logos/microsoft.png'
+                      : 'assets/images/partner-logos/microsoft.png';
+              });
+
+              // Промени за баровите
+              bars.forEach(bar => {
+                  bar.style.backgroundColor = '#0f4efe';
+              });
+          } else {
+              navigation.classList.remove('scrolled');
+
+              // Врати ги логата во нивната почетна состојба
+              logoElements1.forEach(logo => {
+                  logo.src = 'assets/images/logo-ainsi-pbse-white.png';
+              });
+              logoElements2.forEach(logo => {
+                  logo.src = 'assets/images/partner-logos/microsoft-white.png';
+              });
+
+              // Врати ја бојата на баровите
+              bars.forEach(bar => {
+                  bar.style.backgroundColor = 'white';
+              });
+          }
+      }
+  }
 });
 
 
