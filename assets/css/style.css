@@ -2640,6 +2640,12 @@ ul.icon-list-2 li::before {
     border-radius: 50px;
 }
 
+.green{
+    color: green;
+    background-color: green;
+    border-radius: 50px;
+}
+
 .video-section .container {
     position: relative;
     padding-top: 1rem
