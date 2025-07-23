@@ -27,6 +27,7 @@ const setBackgroundImageSize = () => {
     });
 }
 
+
 const animateBackgrounds = () => {
     // const loop_elements = document.querySelectorAll('.background-loop');
 
@@ -1374,5 +1375,13 @@ function startCountdown(targetDate) {
 
 const targetDate = new Date("2025-04-08T10:00:00").getTime();
 startCountdown(targetDate);
-  
+
+if ($('.theme_carousel').length) {
+			$(".theme_carousel").each(function (index) {
+			var $owlAttr = {},
+			$extraAttr = $(this).data("options");
+			$.extend($owlAttr, $extraAttr);
+			$(this).owlCarousel($owlAttr);
+		});
+	}
   
