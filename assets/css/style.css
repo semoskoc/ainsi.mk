@@ -5545,6 +5545,15 @@ thead {
     background-color: rgba(255, 255, 255, 0.7);
     background-blend-mode: overlay; 
 }
+.agenda-30-bg{
+    width: 100%;
+    background-image: url('../../assets/images/agenda-bg.png');
+    background-size: cover; 
+    background-position: right center; 
+    background-repeat: no-repeat; 
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: overlay; 
+}
 
 .first-image {
     width: 100%;
